@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+:root{
+
+    --Lila: hsl(224, 37%, 76%);
+    --FondoFormulario: hsl(220, 18%, 23%);
+    --FondoOscuro: hsl(220, 17%, 19%);
+    --BordeFormulario:hsl(224, 19%, 27%);
+    --FondoBoton: hsl(243, 100%, 69%);
+    --Blanco: hsl(0, 0%, 100%);
+
+
+
+
+
+}
+
+.main-container{
+ 
+    width: 350px;
+
+}
+
+.contenedor{
+ background-color: var(--FondoFormulario);
+ margin-left: 150px;
+ border-radius: 5px;
+ padding-left: 26px;
+ padding-right: 56px;
+border: 2.5px solid var(--BordeFormulario) ;
+width: 350px;
+}
+
+label{
+    font-size: 0.9em;
+ 
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+h1{
+    width: 235px;
+    font-size: 1.5em;
+    line-height: 38px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+
+
+
+body{ 
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--FondoOscuro) ;
+    color: var(--Lila);
+}
+
+
+#formulario {
+    padding: 30px 20px;
+}
+
+.form-control {    
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font:weight 200px
+}
+
+.form-control input {
+    border: none;
+    background-color: #f0f0f0;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    width: 100%;    
+}
+.form-control, input:focus {
+    outline: none;
+}
+
+.form-control.ok input {
+    border: 0.1px solid;
+    border-color: #14c231;
+}
+.form-control.falla input {
+    border: 0.1px solid;
+    border-color: #fe5f55;
+}
+
+#formulario button {
+    background: var(--FondoBoton);
+    
+    border-radius: 2px;
+    color: #f6f6e9;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    margin-top: -10px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.form-control.falla p {
+    visibility: visible;
+    color:#e74c3c;
+}
